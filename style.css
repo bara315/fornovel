@@ -1,3 +1,11 @@
+@font-face {
+font-family: 'nm';
+src: url('./font/natumemozi.woff') format('woff') ,
+url('./font/natumemozi.eot') format('eot') ,
+url('./font/natumemozi.woff2') format('woff2') ,
+url('./font/natumemozi.ttf') format('ttf') ;
+}
+
 html{
     background-image: url("back.jpeg");
     height:100%;
@@ -485,13 +493,26 @@ div#footer-bk
   font-size:20px;
 }
 
-.novelbox{
-  width : 80%;
-  background-color : lightyellow;
+.titlebox{
+  border: 3px dashed peachpuff;
+  width : 90%;
+  background-color : tan;
+  /* background-image: url("headerbk.png"); */
   min-height : 10%;
+  text-align: center;
 }
 
-.novelbox p {
+.titlebox h1 {
+  font-family: "nm";
+  margin-top : 1%;
+  margin-left: 1%;
+  margin-right : 1%;
+  margin-bottom: 1%;
+  min-height : 2%;
+  padding: 1%;
+  font-size:40px;
+}
+.titlebox p {
   margin-top : 1%;
   margin-left: 1%;
   margin-right : 1%;
@@ -499,6 +520,35 @@ div#footer-bk
   min-height : 2%;
   padding: 1%;
   font-size:20px;
+}
+
+.novelbox{
+  width : 80%;
+  background-color : lightyellow;
+  min-height : 10%;
+  text-align: left;
+}
+
+.novelbox p {
+  font-family:sans-serif;
+  margin-top : 1%;
+  margin-left: 1%;
+  margin-right : 1%;
+  margin-bottom: 1%;
+  min-height : 2%;
+  padding: 1%;
+  font-size:20px;
+}
+.novelbox table {
+  font-family:sans-serif;
+  margin-top : 1%;
+  margin-left: 1%;
+  margin-right : 1%;
+  margin-bottom: 1%;
+  min-height : 2%;
+  padding: 1%;
+  font-size:20px;
+  color :slategray;
 }
 
 .balloon {
