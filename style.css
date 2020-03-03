@@ -89,7 +89,8 @@ nav ul li a:hover{
 section{
     min-height:100%
     width:98%;
-    background-color:lightyellow;
+    /* background-color:tan; */
+    /* background-image:url("headerbk.png"); */
     color:#000;
     margin:5px;
     padding-bottom:10px;
@@ -478,6 +479,7 @@ div#footer-bk
   margin-left: 1%;
   margin-right : 1%;
   margin-bottom: 1%;
+  min-height : 2%;
   padding: 1%;
 }
 
