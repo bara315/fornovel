@@ -472,6 +472,7 @@ div#footer-bk
 .novelbox{
   width : 80%;
   background-color : lightyellow;
+  min-height : 10%;
 }
 
 .novelbox p {
