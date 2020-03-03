@@ -87,11 +87,12 @@ nav ul li a:hover{
 }
 
 section{
-    min-height:100%
+    min-height:100%;
     width:98%;
     /* background-color:tan; */
     /* background-image:url("headerbk.png"); */
     color:#000;
+    min-height : 2%;
     margin:5px;
     padding-bottom:10px;
 }
