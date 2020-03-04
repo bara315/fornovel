@@ -74,24 +74,51 @@ nav{
     margin:10px 10px 10px 10px;
 }
 
-nav ul{
+nav ul.overview{
     list-style:none;
 }
 
-nav ul li{
-    display: inline;
+nav ul.overview li{
+    width:10%;
+    text-align: center;
+    display: inline-block;
     padding-right:30px;
+    position: relative;
 }
 
-nav ul li a{
+nav ul.overview li a{
     line-height:30px;
     text-decoration:none;
     color:#000;
 }
 
-nav ul li a:hover{
+nav ul.overview li a:hover{
     color: yellow;
     text-shadow: 1px 1px 1px gold;	/*横方向 縦方向 ぼかし 影の色;*/
+}
+
+
+/* ▼サブメニューは、とりあえず非表示にしておく */
+nav ul.overview ul {
+   display: none;       /* ★1:標準では非表示にする */
+   margin: 0px;         /* ★2:サブメニュー外側の余白(ゼロ) */
+   padding: 0px;        /* ★3:サブメニュー内側の余白(ゼロ) */
+   position: absolute;  /* ★4:絶対配置にする */
+}
+nav ul.overview ul li {
+    width : 70%;
+    text-align: left;
+    padding-left: 20%;
+    background-image:url("paper.png");
+}
+
+
+/* ---------------------------------- */
+/* ▼サブメニューがある場合に開く処理 */   /* ※サブメニューが1階層しか存在しない場合の記述 */
+/* ---------------------------------- */
+nav ul.overview li:hover ul {
+    color: yellow;
+    display: block;      /* ★5:マウスポインタが載っている項目の内部にあるリストを表示する */
 }
 
 section{
@@ -163,6 +190,15 @@ article img.right{
     float:left;
 }
 
+next{
+    background-color : wheat;
+}
+
+next a:hover{
+    background-color : wheat;
+    color: yellow;
+    text-shadow: 1px 1px 1px gold;	/*横方向 縦方向 ぼかし 影の色;*/
+}
 
 #tweet{
     float:right;
@@ -549,91 +585,4 @@ div#footer-bk
   padding: 1%;
   font-size:20px;
   color :slategray;
-}
-
-.balloon {
-  width: 100%;
-  margin: 1.5em 0;
-  overflow: hidden;
-}
-
-.balloon .chatting {
-  width: 100%;
-}
-
-.balloon .faceicon-sara {
-  float: left;
-  margin-left: 1%;
-  margin-right: -90px;
-  width: 80px;
-}
-
-.balloon .faceicon-sara img{
-  width: 100%;
-  height: auto;
-  border: solid 3px peachpuff;
-  border-radius: 50%;
-}
-
-.sayssara {
-  display: inline-block;
-  position: relative;
-  margin: 5px 0 0 105px;
-  padding: 17px 13px;
-  border-radius: 12px;
-  background: peachpuff;
-}
-
-.sayssara:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  left: -24px;
-  border: 12px solid transparent;
-  border-right: 12px solid peachpuff;
-}
-
-.sayssara p {
-  margin: 0;
-  padding: 0;
-}
-
-.balloon .faceicon-na {
-  float: left;
-  margin-left: 1%;
-  margin-right: -90px;
-  width: 80px;
-}
-
-.balloon .faceicon-na img{
-  width: 100%;
-  height: auto;
-  border: solid 3px sandybrown;
-  border-radius: 50%;
-}
-
-
-.saysna {
-  display: inline-block;
-  position: relative;
-  margin: 5px 0 0 105px;
-  padding: 17px 13px;
-  border-radius: 12px;
-  background: sandybrown;
-}
-
-.saysna:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  left: -24px;
-  border: 12px solid transparent;
-  border-right: 12px solid sandybrown;
-}
-
-.saysna p {
-  margin: 0;
-  padding: 0;
 }
