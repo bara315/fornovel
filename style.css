@@ -546,7 +546,7 @@ div#footer-bk
   margin-bottom: 1%;
   min-height : 2%;
   padding: 1%;
-  font-size:40px;
+  font-size:50px;
 }
 .titlebox p {
   margin-top : 1%;
@@ -575,7 +575,7 @@ div#footer-bk
   margin-bottom: 1%;
   min-height : 2%;
   padding: 1%;
-  font-size:40px;
+  font-size:50px;
   color : black;
 }
 .lylicbox p {
@@ -586,7 +586,7 @@ div#footer-bk
   margin-bottom: 1%;
   min-height : 2%;
 
-  font-size:30px;
+  font-size:40px;
   color:slategray;
 }
 .lylicbox h2 {
@@ -597,7 +597,7 @@ div#footer-bk
   margin-bottom: 1%;
   min-height : 2%;
   padding: 1%;
-  font-size:30px;
+  font-size:40px;
   color:lightsteelblue;
 }
 
@@ -616,7 +616,7 @@ div#footer-bk
   margin-bottom: 1%;
   min-height : 2%;
   padding: 1%;
-  font-size:35px;
+  font-size:40px;
 }
 .novelbox table {
   font-family:sans-serif;
